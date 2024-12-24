@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteAllTest">
+  <test thread-count="5" name="TestRunAllTest">
+    <classes>
+      <class name="TestClass.CreateSegmentTest"/>
+      <class name="TestClass.AudienceConfigurationTest"/>
+      <class name="TestClass.ListImportTest"/>
+      <class name="TestClass.LoginTest"/>
+      <class name="TestClass.CreateTemplateTest"/>
+      <class name="TestClass.CreateCampaignTransactionalTest"/>
+      <class name="TestClass.CreateCampaignPromotionalTest"/>
+    </classes>
+  </test> <!-- TestRunAllTest -->
+</suite> <!-- SuiteAllTest -->

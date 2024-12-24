@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Testing Suite" parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="MyListners.ListenersClassCX"></listener>
+		<!--<listener class-name="MyListners.MyAnotationTransformer"></listener>-->
+	</listeners>
+	
+  <test name="testparallel1">
+	  <parameter name="bName" value="Chrome"></parameter>
+    <classes>
+	<class name="TestClass.CreateCampaignTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test name="testparallel2">
+	   <parameter name="bName" value="Firefox"></parameter>
+    <classes>
+	 <class name="TestClass.CreateTemplateTest"/>
+    </classes>
+  </test>
+  
+<!--    <test name="testparallel3">
+    <classes>
+      <class name="TestClass.CreateSegmentTest"/>
+    </classes>
+  </test>
+  
+   <test name="testparallel4">
+    <classes>
+      <class name="TestClass.AudienceConfigurationTest"/>
+    </classes>
+  </test>
+  
+   <test name="testparallel5">
+    <classes>
+      <class name="TestClass.LoginTest"/>
+    </classes>
+  </test>-->
+  
+</suite> <!-- Suite -->
